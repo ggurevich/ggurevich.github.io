@@ -1,0 +1,28 @@
+body{
+	background-image: url(img/rainbow.jpg);
+	max-width: auto 100%;
+}
+
+h1{
+	text-align: center;
+	border: 5px solid black; 
+	height: 40px;
+}
+.navbar{
+	text-align: center;
+	font-size: 50;
+}
+#featurecake{
+	background-color: green;
+	width: 50%;
+	} 
+#dailydesc{
+	background-color: blue;
+}
+#weeklydesc{
+	background-color: pink;
+}
+.product{
+	flex-grow: 1;
+}
+
