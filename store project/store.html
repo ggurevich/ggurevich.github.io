@@ -20,25 +20,36 @@
 </head>
 <body style="max-width: 100%;">
 
-	<header><h1 class="fonts">Caketastic!</h1></header>
-
+	
 <!--links at top-->
 	
 	<section>
-		<div class="navbar fonts">
-			<nav>
-			<a href="">shop</a>
-			<a href="">coupons</a>
-			<a href="">locate store</a>
-			</nav>
-			
-			
+		<div class="navbar fonts col-sm-12">
+			<div class="row fonts">
+				<ul class="nav nav-pills">
+					<li><a href=""><h1>Caketastic</h1></a></li>				
+					<li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h1>Shop</h1></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><h1>Cartoons</h1></a></li>
+						<li><a href="#"><h1>Holiday</h1></a></li>
+						<li><a href="#"><h1>Birthday</h1></a></li>
+						<li><a href="#"><h1>Wedding</h1></a></li>
+					</ul>
+					</li>
+					<li><a href="#"><h1>Coupons</h1></a></li>
+					<li><a href="#"><h1>Locate Store</h1></a></li>
+
+
+				</ul>
+            
+        	</div>
 		</div>
 	</section>
-
+	<!--product-->
 	<section>
-		<div class="container">
-			<div class="row">
+		<div class="container" style="width: 100vw">
+			<div class="row" style="width: 100%; margin: 0 auto;">
+				<div class="col-sm-12">
 
 			<!--featured cake-->
 				<div class="col-sm-8" style="float: left;">
@@ -47,12 +58,12 @@
 			<!--feature image-->
 
 
-					<div class="col-sm-4" style="float: left; width: 50%">
+					<div class="col-sm-4" style="float: left; max-width: 50%">
 						<img class="img" src="img/sponge.jpg" height="600px">		
 					</div>
 
 			<!--feature description-->
-					<div id ="featurecake" class="col-sm-4 fonts" style="float: right; height: 600px; width: 50%">
+					<div id ="featurecake" class="col-sm-4 fonts" style="float: right; height: 600px; max-width: 50%">
 						<h2>Freatured Cake!</h2>
 							
 								<p>Marble cake</p>
@@ -62,7 +73,7 @@
 					</div>
 				</div>
 			<!--specials-->
-				<div class="col-sm-4 product" style="float: right; width: 50% max-width;">
+				<div class="col-sm-4" style="float: right; width: 50% max-width;">
 					<div class="row">
 			<!--daily image-->
 						<div class="col-sm-2" style="float: left; width: 50%">
@@ -94,6 +105,7 @@
 								
 						</div>
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>
