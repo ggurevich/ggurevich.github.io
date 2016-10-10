@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+  	<link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/font-awesome-4.6.3/css/font-awesome.min.css">
   	
   	<!--google fonts-->
 
@@ -19,25 +19,64 @@
 
 </head>
 <body style="max-width: 100%;">
+<!-- Store Locate Modal -->
+    <div id="storeLocateModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Location</h4>
+                </div>
+                <div class="modal-body">
+                    <address class="text-center">
+                        <strong>Caketastic</strong>
+                        <br /> Launch Fishers
+                        <br /> 12175 Visionary Way
+                        <br /> Fishers, IN 46038
+                    </address>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Coupon Modal -->
+    <div id="couponModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            	<div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Storewide Promotions</h4>
+                </div>                
+                <div class="modal-body">
+                    <h1 class="text-center">10% DISCOUNT FOR ALL FIRST TIME CUSTOMERS!</h1>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	
+
+	<header class="fonts"><center><a href="store.html"><p><i class="fa fa-birthday-cake" aria-hidden="true"></i>Caketastic<i class="fa fa-birthday-cake" aria-hidden="true"></i></p></a></center></header>
 <!--links at top-->
 	
 	<section>
-		<div class="navbar fonts col-sm-12">
-			<div class="row fonts">
-				<ul class="nav nav-pills">
-					<li><a href="#"><h1>Caketastic</h1></a></li>			
-					<li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h1>Shop</h1></a>
-					<ul class="dropdown-menu">					
-						<li><a href="#"><h1>Cartoons</h1></a></li>
-						<li><a href="#"><h1>Holiday</h1></a></li>
-						<li><a href="#"><h1>Birthday</h1></a></li>
-						<li><a href="#"><h1>Wedding</h1></a></li>
+		<div class="col-sm-12">
+			<div class="row fonts greenshadow">
+				<ul class="nav nav-pills">				
+					<li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h1 class="coil">Shop</h1></a>
+					<ul class="dropdown-menu">
+						<li><a href="cartoons.html"><h1 class="coil">Cartoons</h1></a></li>
+						<li><a href="#"><h1 class="coil">Holiday</h1></a></li>
+						<li><a href="#"><h1 class="coil">Birthday</h1></a></li>
+						<li><a href="#"><h1 class="coil">Wedding</h1></a></li>
 					</ul>
 					</li>
-					<li><a href="#"><h1>Coupons</h1></a></li>
-					<li><a href="#"><h1>Locate Store</h1></a></li>
+					<li><a href="#" data-toggle="modal" data-target="#couponModal"><h1 class="coil">Coupons</h1></a></li>
+					<li><a href="#" data-toggle="modal" data-target="#storeLocateModal"><h1 class="coil">Locate Store</h1></a></li>
 				</ul>            
         	</div>
 		</div>
@@ -56,17 +95,16 @@
 
 
 					<div class="col-sm-4" style="float: left; max-width: 50%">
-						<img class="img" src="img/sponge.jpg" height="600px">		
+						<img src="img/sponge.jpg" height="600px">		
 					</div>
 
 			<!--feature description-->
-					<div id ="featurecake" class="col-sm-4 fonts" style="float: right; height: 600px; max-width: 50%">
-						<h2>Freatured Cake!</h2>
-							
+					<div id ="featurecake" class="col-sm-4 fonts greenshadow" style="float: right; height: 600px; max-width: 50%">
+						<h1>Freatured Cake!</h1>
+						<h3>Spongebob and Krabby Patty Cake</h3>			
 								<p>Marble cake</p>
 								<p>Buttercreame frosting</p>
-								<p>Comes with decorative toys for kids</p>
-							
+								<p>Comes with decorative toys for kids</p>	
 					</div>
 				</div>
 			<!--specials-->
@@ -77,9 +115,9 @@
 							<img src="img/balloon.JPG" height="300px">
 						</div>
 			<!--daily special description-->	
-						<div id="dailydesc" class="col-sm-2 fonts" style="float: right; height: 300px; width: 50%">
-							<h3>Daily special</h3>
-								
+						<div id="dailydesc" class="col-sm-2 fonts greenshadow" style="float: right; height: 300px; width: 50%">
+							<h2>Daily special</h2>
+							<h3>Pixar Up House</h3>							
 									<p>cholcolate</p>
 									<p>iced frosting</p>
 									<p>perfect for pixar fans</p>
@@ -93,13 +131,12 @@
 							<img src="img/flower.jpg" height="300px">
 						</div>
 			<!--weekly special description-->
-						<div id="weeklydesc" class="col-sm-2 fonts" style="float: right; height: 300px; width: 50%">
+						<div id="weeklydesc" class="col-sm-2 fonts greenshadow" style="float: right; height: 300px; width: 50%">
 							<h3>weekly special</h3>
-								
+							<h4>2D Flower Cake</h4>							
 									<p>yellow cake</p>
 									<p>buttercreame frosting</p>
-									<p>artisan style</p>
-								
+									<p>artisan style</p>					
 						</div>
 					</div>
 				</div>
@@ -108,6 +145,6 @@
 		</div>
 	</section>
 
-	<footer><h2>&copy Gabriel Gurevich 2016</h2></footer>	
+	<footer><center><p>&copy Gabriel Gurevich 2016</p></center></footer>	
 </body>
 </html>
